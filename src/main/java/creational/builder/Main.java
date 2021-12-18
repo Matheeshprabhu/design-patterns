@@ -6,8 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        UserDTO userDTO = directBuild(new UserWebDTOBuilder(), createUser());
-
+        UserDTO userDTO = directBuild(UserWebDTO.getBuilder(), createUser());
         System.out.println(userDTO);
 
     }
